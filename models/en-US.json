@@ -1,0 +1,615 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "space exploration",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "LatestLaunchIntent",
+                    "slots": [],
+                    "samples": [
+                        "Latest launch",
+                        "When was the lastest spacex launch",
+                        "When was the latest launch",
+                        "What was the latest spacex launch",
+                        "What was the latest launch",
+                        "Tell me when the latest launch was",
+                        "Tell me what the latest launch was",
+                        "Tell me when the latest space x launch was",
+                        "Tell me what the latest space x launch was"
+                    ]
+                },
+                {
+                    "name": "UpcomingLaunchIntent",
+                    "slots": [],
+                    "samples": [
+                        "Upcoming launch",
+                        "Next launch",
+                        "When is the next launch",
+                        "What is the next launch",
+                        "When is the upcoming launch",
+                        "What is the upcoming launch",
+                        "Tell me when the next launch is",
+                        "Tell me the next launch",
+                        "Tell me when the upcoming launch is",
+                        "Tell me the upcoming launch"
+                    ]
+                },
+                {
+                    "name": "SpacexSummaryIntent",
+                    "slots": [],
+                    "samples": [
+                        "What is Space X",
+                        "What does Space X do",
+                        "What do you do",
+                        "What is the goal for Space X",
+                        "What is the goal",
+                        "When was Space X founded",
+                        "When was Space X created"
+                    ]
+                },
+                {
+                    "name": "SpacexLocationIntent",
+                    "slots": [],
+                    "samples": [
+                        "Where is Space X Located",
+                        "Where is Space X",
+                        "Where is the headquarters",
+                        "Headquarters",
+                        "Where are you",
+                        "Where are you located"
+                    ]
+                },
+                {
+                    "name": "SpacexEmployeesIntent",
+                    "slots": [],
+                    "samples": [
+                        "How many employees does Space X have",
+                        "How many employees work for Space X",
+                        "How many employees do you have",
+                        "How many employees work for you",
+                        "How many people work at Space X",
+                        "How many people work for Space X",
+                        "How many people work for you",
+                        "Number of employees"
+                    ]
+                },
+                {
+                    "name": "SpacexRocketIntent",
+                    "slots": [
+                        {
+                            "name": "SpacexRocket",
+                            "type": "SPACEX_ROCKETS",
+                            "samples": [
+                                "Tell me about {SpacexRocket}",
+                                "I would like to learn about {SpacexRocket}",
+                                "{SpacexRocket}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What is {SpacexRocket}",
+                        "{SpacexRocket}",
+                        "Tell me about {SpacexRocket}",
+                        "What are the Space X rockets",
+                        "What are the rockets",
+                        "What rockets does Space X have",
+                        "Tell me about a rocket",
+                        "Tell me about rockets",
+                        "Tell me about the rockets",
+                        "Tell me about Space X rockets"
+                    ]
+                },
+                {
+                    "name": "LandingPadsIntent",
+                    "slots": [
+                        {
+                            "name": "LandingPad",
+                            "type": "LANDING_PADS",
+                            "samples": [
+                                "Tell me about {LandingPad}",
+                                "{LandingPad}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Tell me about Space X landing pads",
+                        "Tell me about landing pads",
+                        "What landing pads are there",
+                        "What landing pads does Space X have",
+                        "What are the Space X landing pads",
+                        "Tell me about {LandingPad}",
+                        "{LandingPad}",
+                        "What is {LandingPad}"
+                    ]
+                },
+                {
+                    "name": "WhoIsIntent",
+                    "slots": [
+                        {
+                            "name": "position",
+                            "type": "Positions",
+                            "samples": [
+                                "I want to know about the {position}",
+                                "Tell me about the {position}",
+                                "{position}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Who are the executives",
+                        "Who are the executives of Space X",
+                        "{position}",
+                        "Who is the {position} of Space X",
+                        "Who is the {position}"
+                    ]
+                },
+                {
+                    "name": "HistoricalEventIntent",
+                    "slots": [],
+                    "samples": [
+                        "Historical event",
+                        "Tell me history",
+                        "Event",
+                        "Events",
+                        "Tell me events",
+                        "Tell me about an event",
+                        "Tell me something",
+                        "Tell me something about Space X",
+                        "Tell me an event",
+                        "Tell me a historical event"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "LaunchesIntent",
+                    "slots": [
+                        {
+                            "name": "LaunchTense",
+                            "type": "LAUNCH_TENSE",
+                            "samples": [
+                                "I want to know about {LaunchTense}",
+                                "{LaunchTense}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Tell me about launches",
+                        "Tell me about the {LaunchTense}",
+                        "I want to know about the {LaunchTense}",
+                        "{LaunchTense}",
+                        "I want to know about {LaunchTense}",
+                        "Tell me about {LaunchTense}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "SPACEX_ROCKETS",
+                    "values": [
+                        {
+                            "id": "starship",
+                            "name": {
+                                "value": "Starship",
+                                "synonyms": [
+                                    "Star ship",
+                                    "Starship"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "falconheavy",
+                            "name": {
+                                "value": "Falcon Heavy",
+                                "synonyms": [
+                                    "Heavy",
+                                    "Falcon Heavy"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "falcon9",
+                            "name": {
+                                "value": "Falcon 9",
+                                "synonyms": [
+                                    "9",
+                                    "Nine",
+                                    "Falcon9",
+                                    "Falcon Nine",
+                                    "Falcon 9"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "falcon1",
+                            "name": {
+                                "value": "Falcon 1",
+                                "synonyms": [
+                                    "1",
+                                    "One",
+                                    "Falcon1",
+                                    "Falcon One",
+                                    "Falcon 1"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LANDING_PADS",
+                    "values": [
+                        {
+                            "id": "ASOG",
+                            "name": {
+                                "value": "A Shortfall of Gravitas",
+                                "synonyms": [
+                                    "A Shortfall of Gravitas",
+                                    "ASOG"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "JRTI",
+                            "name": {
+                                "value": "Just Read The Instructions",
+                                "synonyms": [
+                                    "JRTI",
+                                    "Just Read The Instructions"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "JRTI-1",
+                            "name": {
+                                "value": "Just Read The Instructions V1",
+                                "synonyms": [
+                                    "JRTI One",
+                                    "Just Read The Instructions Version 1",
+                                    "Just Read The Instructions Version One",
+                                    "Just Read The Instructions One",
+                                    "JRTI-1"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "OCISLY",
+                            "name": {
+                                "value": "Of Course I Still Love You",
+                                "synonyms": [
+                                    "OCISLY",
+                                    "Of Course I Still Love You"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "LZ-4",
+                            "name": {
+                                "value": "Landing Zone 4",
+                                "synonyms": [
+                                    "LZ Four",
+                                    "LZ 4",
+                                    "Landing Zone Four",
+                                    "Landing Zone 4",
+                                    "LZ-4",
+                                    "LZ4"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "LZ-2",
+                            "name": {
+                                "value": "Landing Zone 2",
+                                "synonyms": [
+                                    "LZ-Two",
+                                    "LZ Two",
+                                    "LZ-2",
+                                    "LZ2",
+                                    "Landing Zone Two",
+                                    "Landing Zone 2"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "LZ-1",
+                            "name": {
+                                "value": "Landing Zone 1",
+                                "synonyms": [
+                                    "LZ-One",
+                                    "LZ One",
+                                    "LZ-1",
+                                    "LZ1",
+                                    "Landing Zone 1",
+                                    "Landing Zone One"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Positions",
+                    "values": [
+                        {
+                            "id": "founder",
+                            "name": {
+                                "value": "Founder",
+                                "synonyms": [
+                                    "creator",
+                                    "founder"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cto_propulsion",
+                            "name": {
+                                "value": "C.T.O Propulsion",
+                                "synonyms": [
+                                    "chief technology officer propulsion",
+                                    "c.t.o propulsion",
+                                    "cto propulsion"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "coo",
+                            "name": {
+                                "value": "C.O.O",
+                                "synonyms": [
+                                    "chief operating officer",
+                                    "c.o.o",
+                                    "coo"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cto",
+                            "name": {
+                                "value": "C.T.O",
+                                "synonyms": [
+                                    "chief technology officer",
+                                    "c.t.o",
+                                    "cto"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ceo",
+                            "name": {
+                                "value": "C.E.O",
+                                "synonyms": [
+                                    "chief executive officer",
+                                    "c.e.o",
+                                    "ceo"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LAUNCH_TENSE",
+                    "values": [
+                        {
+                            "id": "upcoming",
+                            "name": {
+                                "value": "Future",
+                                "synonyms": [
+                                    "future launches",
+                                    "upcoming launches",
+                                    "upcoming",
+                                    "future"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "past",
+                            "name": {
+                                "value": "Past",
+                                "synonyms": [
+                                    "past launches",
+                                    "previous launches",
+                                    "previous",
+                                    "past"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "SpacexRocketIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "SpacexRocket",
+                            "type": "SPACEX_ROCKETS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.932744064407.125047551695"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.410788795583.29524310475.62952136737"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "LandingPadsIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "LandingPad",
+                            "type": "LANDING_PADS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1470313791957.174767591906"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1470313791957.174767591906.1555258030575"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "WhoIsIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "position",
+                            "type": "Positions",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.97270401705.1189622063715"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.97270401705.1189622063715.1362442163318"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "LaunchesIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "LaunchTense",
+                            "type": "LAUNCH_TENSE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1039013732466.1366049365605"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1039013732466.1366049365605.1138424714197"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.932744064407.125047551695",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "The rockets are Falcon One ... Falcon Nine ... Falcon Heavy ... and Starship ... Which would you like to learn about?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.410788795583.29524310475.62952136737",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, {SpacexRocket} isn't a valid rocket name. Remember the options are Falcon One ... Falcon Nine ... Falcon Heavy ... and Starship ... Which would you like to hear about?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1470313791957.174767591906.1555258030575",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, {LandingPad} is not a valid landing pad option.  Remember the options are ... Landing Zone One ... Landing Zone Two ... Landing Zone Four ... Of Course I Still Love You ... JRTI Version One ... JRTI ... and ASOG. Which would you like to hear about?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1470313791957.174767591906",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "The landing pad options are ... Landing Zone One ... Landing Zone Two ... Landing Zone Four ... Of Course I Still Love You ... JRTI Version One ... JRTI ... and ASOG. Which would you like to hear about?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.97270401705.1189622063715",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "The executive positions are ... C.E.O ... C.T.O ... C.T.O Propulsion ... and C.O.O. ... Which would you like to know about?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.97270401705.1189622063715.1362442163318",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, {position} is not a valid executive position. Remember the options are ... C.E.O ... C.T.O ... C.T.O Propulsion ... and C.O.O. ... Which would you like to know about?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1039013732466.1366049365605",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do you want to know about past launches or future launches?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1039013732466.1366049365605.1138424714197",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sorry, {LaunchTense} isn't a valid option. Do you want to know about past launches or future launches?"
+                    }
+                ]
+            }
+        ]
+    }
+}

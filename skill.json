@@ -1,0 +1,21 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "serverlessrepo-spacex-inf-alexaskillskitnodejsfact-15G3IXD2F94I8",
+          "sourceDir": "lambda/us-east-1_serverlessrepo-spacex-inf-alexaskillskitnodejsfact-15G3IXD2F94I8"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "SpaceX"
+        }
+      }
+    }
+  }
+}
